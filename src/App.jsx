@@ -1,33 +1,32 @@
-// src/App.jsx
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import ProjectsPage from './components/ProjectsPage';
-// Remove Services import from here
-import Experience from './components/Experience';
-import Awards from './components/Awards';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { useEffect } from 'react';
+import HomePage from './pages/Home';
+import ServicesPage from './pages/Services';
+import ProjectsPage from './pages/Projects';
+import ContactPage from './pages/Contact';
+
+// Scroll to top component
+const ScrollToTop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return null;
+};
 
 function App() {
   return (
     <ParallaxProvider>
-      <div className="min-h-screen gradient-bg">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <ProjectsPage />
-          {/* Remove Services component from here */}
-          <Experience />
-          <Awards />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Router>
     </ParallaxProvider>
   );
 }

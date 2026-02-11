@@ -103,7 +103,6 @@ export const skills = {
   backend: [
     { name: "Java", level: 80 },
     { name: "Spring Boot", level: 75 },
-    { name: "Node.js", level: 70 },
     { name: "MySQL", level: 75 },
     { name: "REST APIs", level: 80 }
   ],
@@ -112,7 +111,6 @@ export const skills = {
     { name: "Firebase", level: 70 },
     { name: "WordPress", level: 65 },
     { name: "VS Code", level: 90 },
-    { name: "Figma", level: 70 }
   ]
 };
 

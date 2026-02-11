@@ -1,18 +1,26 @@
-// src/AppRouter.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import App from './App';
-import ServicesPage from './pages/ServicesPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-const AppRouter = () => {
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import ServicesPage from "./pages/ServicesPage";
+import Contact from "./pages/Contact";
+
+function AppRouter() {
   return (
-    <Router>
+    <BrowserRouter>
+      <Navbar />
+
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/services" element={<ServicesPage />} />
-        {/* Add more routes here if needed */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
-};
+}
 
 export default AppRouter;
