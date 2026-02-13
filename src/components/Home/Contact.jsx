@@ -1,12 +1,21 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, MessageCircle } from 'lucide-react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Linkedin,
+  Github,
+  Twitter,
+  MessageCircle,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -14,13 +23,13 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      
+      setFormData({ name: "", email: "", message: "" });
+
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
@@ -30,7 +39,7 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -38,31 +47,51 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@akshay.dev",
-      link: "mailto:hello@akshay.dev",
-      color: "bg-blue-500"
+      value: "aroramehak0610@gmail.com",
+      link: "mailto:aroramehak0610@gmail.com",
+      color: "bg-blue-500",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (234) 567-890",
-      link: "tel:+1234567890",
-      color: "bg-green-500"
+      value: "+91 85285 11107",
+      link: "tel:+918528511107",
+      color: "bg-green-500",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Jalandhar, Punjab, India",
       link: "#",
-      color: "bg-purple-500"
-    }
+      color: "bg-purple-500",
+    },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", color: "bg-blue-600" },
-    { icon: Github, label: "GitHub", href: "https://github.com", color: "bg-gray-800" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com", color: "bg-sky-500" },
-    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/1234567890", color: "bg-green-500" }
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/mehak-arora427/",
+      color: "bg-blue-600",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/mahi427",
+      color: "bg-gray-800",
+    },
+    // {
+    //   icon: Twitter,
+    //   label: "Twitter",
+    //   href: "https://twitter.com",
+    //   color: "bg-sky-500",
+    // },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/8528511107",
+      color: "bg-green-500",
+    },
   ];
 
   return (
@@ -76,7 +105,10 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">
-            Get In <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Touch</span>
+            Get In{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              Touch
+            </span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Let's discuss your project and bring your ideas to life
@@ -105,12 +137,16 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="bg-white dark:bg-gray-800 rounded-xl p-6 flex items-center space-x-4 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group"
                   >
-                    <div className={`${info.color} w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                    <div
+                      className={`${info.color} w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform`}
+                    >
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-bold">{info.title}</h4>
-                      <p className="text-gray-600 dark:text-gray-400">{info.value}</p>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        {info.value}
+                      </p>
                     </div>
                   </motion.a>
                 );
@@ -150,7 +186,8 @@ const Contact = () => {
                 <span className="font-bold">Available for new projects</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400">
-                I typically respond within 24 hours. Let's schedule a call to discuss your requirements.
+                I typically respond within 24 hours. Let's schedule a call to
+                discuss your requirements.
               </p>
             </div>
           </motion.div>
@@ -163,7 +200,7 @@ const Contact = () => {
           >
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              
+
               {isSubmitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -173,15 +210,21 @@ const Contact = () => {
                   <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="w-8 h-8 border-4 border-green-500 rounded-full border-t-transparent animate-spin"></div>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Message Sent Successfully!</h4>
+                  <h4 className="text-xl font-bold mb-2">
+                    Message Sent Successfully!
+                  </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Thank you for reaching out. I'll get back to you within 24 hours.
+                    Thank you for reaching out. I'll get back to you within 24
+                    hours.
                   </p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Your Name *
                     </label>
                     <input
@@ -197,7 +240,10 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -213,7 +259,10 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Your Message *
                     </label>
                     <textarea
@@ -247,7 +296,8 @@ const Contact = () => {
                   </button>
 
                   <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-                    Your information is secure and will only be used to respond to your inquiry.
+                    Your information is secure and will only be used to respond
+                    to your inquiry.
                   </p>
                 </form>
               )}
@@ -257,17 +307,25 @@ const Contact = () => {
             <div className="mt-6 bg-gradient-to-r from-primary to-secondary rounded-xl p-6 text-white">
               <div className="flex items-center justify-between">
                 <div>
-                  <h4 className="font-bold text-lg">Need immediate assistance?</h4>
+                  <h4 className="font-bold text-lg">
+                    Need immediate assistance?
+                  </h4>
                   <p className="text-sm opacity-90">Schedule a quick call</p>
                 </div>
                 <a
-                  href="https://calendly.com"
+                  href="tel:+918528511107"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-white text-primary font-semibold rounded-lg hover:opacity-90 transition-opacity"
                 >
-                  Book a Call
+                  Make a Call
                 </a>
+                {/* <a
+                  href="tel:+918528511107"
+                  className="glass p-3 rounded-full hover:scale-110 transition-transform"
+                >
+                  <Phone className="w-5 h-5 text-green-500 bg-slate-300" />
+                </a> */}
               </div>
             </div>
           </motion.div>
