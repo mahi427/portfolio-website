@@ -63,7 +63,7 @@ const Hero = () => {
             >
               <Sparkles className="w-4 h-4 text-yellow-500" />
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                Full Stack Developer | 3+ Years Experience
+                Full Stack Developer | 2.5+ Years Experience
               </span>
             </motion.div>
 
@@ -81,7 +81,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6"
             >
-              Full Stack Developer specializing in React.js & Spring Boot
+              Full Stack Developer specializing in React.js & Web Development
             </motion.p>
 
             {/* Description */}
@@ -90,7 +90,7 @@ const Hero = () => {
               className="text-gray-500 dark:text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0"
             >
               B.Tech CSE student at DAVIET (CGPA: 7.78) | NCC 'C' Certificate Holder | 
-              Winner of Vision Bharat Hackathon 2025 | 6+ Industrial Projects
+              Winner of Vision Bharat Hackathon 2025 | 18+ Projects | 5+ Enterprise Clients
             </motion.p>
 
             {/* CTA Buttons */}
@@ -136,7 +136,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5 text-blue-600" />
               </a>
               <a
-                href="mailto:aroarmehak427@gmail.com"
+                href="mailto:aroarmehak0610@gmail.com"
                 className="glass p-3 rounded-full hover:scale-110 transition-transform"
               >
                 <Mail className="w-5 h-5 text-red-500" />
@@ -194,14 +194,14 @@ const Hero = () => {
               {/* Experience Badge */}
               <div className="absolute -top-4 -left-4 glass px-4 py-2 rounded-full">
                 <p className="text-sm font-bold text-purple-600 dark:text-purple-400">
-                  <span className="text-xl">3+</span> Years
+                  <span className="text-xl">2.5+</span> Years
                 </p>
               </div>
 
               {/* Projects Badge */}
               <div className="absolute -bottom-4 -right-4 glass px-4 py-2 rounded-full">
                 <p className="text-sm font-bold text-pink-600 dark:text-pink-400">
-                  <span className="text-xl">6+</span> Projects
+                  <span className="text-xl">18+</span> Projects
                 </p>
               </div>
             </div>

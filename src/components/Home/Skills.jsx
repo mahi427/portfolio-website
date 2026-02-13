@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Code, Database, Palette } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code, Database, Palette } from "lucide-react";
 
 const Skills = () => {
   const skills = [
@@ -9,23 +9,23 @@ const Skills = () => {
       skills: [
         { name: "React", level: 95 },
         { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 85 },
         { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 90 }
+        { name: "Tailwind CSS", level: 90 },
+        { name: "BootStrap", level: 85 },
+        { name: "WordPress", level: 80 },
       ],
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-cyan-500",
     },
     {
       category: "Backend",
       icon: Database,
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL", level: 70 },
-        { name: "Python", level: 75 }
+        { name: "JAVA", level: 85 },
+        { name: "SpringBoot", level: 80 },
+        { name: "MySQL", level: 70 },
+        { name: "Firebase", level: 75 },
       ],
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
     },
     {
       category: "Tools & Others",
@@ -33,12 +33,12 @@ const Skills = () => {
       skills: [
         { name: "Git/GitHub", level: 90 },
         { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 80 },
-        { name: "VS Code", level: 95 }
+        { name: "VS Code", level: 95 },
+        { name: "Hostinger", level: 65 },
+        { name: "Shopify", level: 75 },
       ],
-      color: "from-orange-500 to-red-500"
-    }
+      color: "from-orange-500 to-red-500",
+    },
   ];
 
   const containerVariants = {
@@ -46,9 +46,9 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -56,8 +56,8 @@ const Skills = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6 }
-    }
+      transition: { duration: 0.6 },
+    },
   };
 
   return (
@@ -71,7 +71,10 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">
-            Technical <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Expertise</span>
+            Technical{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              Expertise
+            </span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Technologies and tools I use to bring ideas to life
@@ -96,12 +99,16 @@ const Skills = () => {
               >
                 {/* Category Header */}
                 <div className="flex items-center mb-8">
-                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center mr-4`}>
+                  <div
+                    className={`w-14 h-14 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center mr-4`}
+                  >
                     <Icon className="w-7 h-7 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">{category.category}</h3>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">Development</p>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm">
+                      Development
+                    </p>
                   </div>
                 </div>
 
@@ -113,7 +120,9 @@ const Skills = () => {
                         <span className="font-medium text-gray-800 dark:text-gray-200">
                           {skill.name}
                         </span>
-                        <span className="font-bold text-primary">{skill.level}%</span>
+                        <span className="font-bold text-primary">
+                          {skill.level}%
+                        </span>
                       </div>
                       <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                         <motion.div
@@ -138,12 +147,21 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-center mb-8">Additional Skills</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">
+            Additional Skills
+          </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Responsive Design", "SEO Optimization", "Performance", "Accessibility", 
-              "UI/UX Design", "Agile Methodology", "REST APIs", "GraphQL",
-              "Testing", "CI/CD", "Web Security", "PWA"
+              "Responsive Design",
+              "E-Commerce Development",
+              "SEO Optimization",
+              "Performance",
+              "Accessibility",
+              "UI/UX Design",
+              "Agile Methodology",
+              "REST APIs",
+              "Testing",
+              "Web Security",
             ].map((skill) => (
               <span
                 key={skill}

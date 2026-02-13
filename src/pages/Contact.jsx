@@ -49,8 +49,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "aroarmehak427@gmail.com",
-      link: "mailto:aroarmehak427@gmail.com",
+      value: "aroarmehak0610@gmail.com",
+      link: "mailto:aroarmehak0610@gmail.com",
       color: "from-blue-500 to-blue-600"
     },
     {
@@ -183,15 +183,15 @@ const Contact = () => {
                 {/* Quick Stats */}
                 <div className="grid grid-cols-3 gap-3 sm:gap-4">
                   <div className="glass-card p-3 sm:p-4 text-center">
-                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-600">6+</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-600">18+</div>
                     <div className="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400">Projects</div>
                   </div>
                   <div className="glass-card p-3 sm:p-4 text-center">
-                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-pink-600">3+</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-pink-600">2.5+</div>
                     <div className="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400">Years Exp</div>
                   </div>
                   <div className="glass-card p-3 sm:p-4 text-center">
-                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600">30+</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600">5+</div>
                     <div className="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400">Clients</div>
                   </div>
                 </div>

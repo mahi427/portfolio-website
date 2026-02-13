@@ -5,49 +5,49 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "Tech Solutions Inc.",
+      company: "Webdox InfoTech pvt ltd.",
       position: "Frontend Developer",
       duration: "June 2023 - Present",
-      location: "Remote",
+      location: "Jalandhar (Punjab)",
       responsibilities: [
         "Developed responsive user interfaces using React and Tailwind CSS",
         "Implemented animations and micro-interactions with Framer Motion",
         "Collaborated with design team to implement pixel-perfect designs",
         "Optimized website performance reducing load time by 40%"
       ],
-      technologies: ["React", "TypeScript", "Tailwind", "Framer Motion", "Next.js"],
+      technologies: ["HTML","JavaScript","React","Tailwind CSS", "Framer Motion", "Bootstrap","Wordpress"],
       icon: Briefcase,
       color: "bg-blue-500"
     },
     {
       id: 2,
-      company: "Digital Agency",
+      company: "Digital",
       position: "Web Developer",
       duration: "Jan 2022 - May 2023",
-      location: "New York, NY",
+      location: "Jalandhar (Punjab)",
       responsibilities: [
         "Built and maintained client websites using modern frameworks",
         "Implemented SEO best practices improving search rankings",
         "Created reusable components reducing development time by 30%",
         "Integrated third-party APIs and services"
       ],
-      technologies: ["JavaScript", "React", "Node.js", "MongoDB", "Express"],
+      technologies: ["JavaScript", "React","Tailwind CSS", "JAVA", "SpringBoot", "MySQL"],
       icon: Target,
       color: "bg-purple-500"
     },
     {
       id: 3,
-      company: "Startup Accelerator",
-      position: "Software Engineering Intern",
+      company: "Remote",
+      position: "Software Developer",
       duration: "Aug 2021 - Dec 2021",
-      location: "San Francisco, CA",
+      location: "Remote",
       responsibilities: [
         "Assisted in full-stack development of web applications",
         "Participated in agile development processes and code reviews",
         "Contributed to UI/UX improvements and bug fixes",
         "Learned industry best practices and coding standards"
       ],
-      technologies: ["Python", "Django", "PostgreSQL", "AWS", "Docker"],
+      technologies: ["JAVA", "SpringBoot", "MySQL", "GitHub", "Docker"],
       icon: Users,
       color: "bg-green-500"
     },
@@ -55,15 +55,15 @@ const Experience = () => {
       id: 4,
       company: "Freelance Projects",
       position: "Freelance Developer",
-      duration: "2020 - Present",
+      duration: "2024 - Present",
       location: "Remote",
       responsibilities: [
-        "Completed 50+ projects for various clients worldwide",
+        "Completed 18+ projects for various clients across different industries",
         "Specialized in React applications and responsive web design",
         "Managed client relationships and project timelines",
         "Maintained 100% client satisfaction rate"
       ],
-      technologies: ["React", "Tailwind", "Firebase", "Stripe", "Vercel"],
+      technologies: ["React", "Tailwind CSS", "Firebase", "Netlify", "Vercel","GitHub","Hostinger","Wordpress","Canva","shopify"],
       icon: Award,
       color: "bg-orange-500"
     }
@@ -184,15 +184,15 @@ const Experience = () => {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">18+</div>
             <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
           </div>
           <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20">
-            <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">30+</div>
+            <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">5+</div>
             <div className="text-gray-600 dark:text-gray-400">Happy Clients</div>
           </div>
           <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20">
-            <div className="text-3xl md:text-4xl font-bold text-green-500 mb-2">3+</div>
+            <div className="text-3xl md:text-4xl font-bold text-green-500 mb-2">2.5+</div>
             <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
           </div>
           <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20">

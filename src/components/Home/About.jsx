@@ -20,13 +20,13 @@ const About = () => {
     degree: "B.Tech Computer Science Engineering",
     college: "DAV Institute of Engineering & Technology, Jalandhar",
     cgpa: "7.78",
-    passingYear: "2025",
+    passingYear: "2026",
     location: "Jalandhar, Punjab",
-    email: "aroarmehak427@gmail.com",
+    email: "aroarmehak0610@gmail.com",
     phone: "+91 85285-11107",
-    experience: "3+ Years",
-    projects: "6+ Projects",
-    clients: "2+ Enterprise Clients"
+    experience: "2.5+ Years",
+    projects: "18+ Projects",
+    clients: "5+ Enterprise Clients"
   };
 
   // Education Details
@@ -35,13 +35,13 @@ const About = () => {
       degree: "B.Tech - Computer Science Engineering",
       institution: "DAV Institute of Engineering & Technology, Jalandhar",
       score: "CGPA: 7.78",
-      year: "Expected March 2025",
+      year: "Expected June 2026",
       icon: GraduationCap,
       color: "from-blue-600 to-cyan-600"
     },
     {
       degree: "Senior Secondary (XII - CBSE)",
-      institution: "Kendriya Vidyalaya, Suranussi, Jalandhar",
+      institution: "Kendriya Vidyalaya Suranussi, Jalandhar",
       score: "Percentage: 90%",
       year: "2022",
       icon: Award,
@@ -76,7 +76,7 @@ const About = () => {
       color: "from-purple-600 to-pink-600"
     },
     {
-      title: "Best Dancer - All India Folk Art Contest 2022",
+      title: "Best Performer - All India Folk Art Contest 2022",
       description: "2-time Winner - Youth Festival (Folk Dance 2022-2023)",
       icon: Heart,
       color: "from-red-500 to-rose-500"
@@ -152,7 +152,7 @@ const About = () => {
                   <Calendar className="w-5 h-5 text-pink-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs text-gray-500 dark:text-gray-400">Passing Year</p>
-                    <p className="text-sm font-semibold">March 2025</p>
+                    <p className="text-sm font-semibold">June 2026</p>
                     <p className="text-xs text-gray-600 dark:text-gray-400">Expected</p>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ const About = () => {
                   <Briefcase className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs text-gray-500 dark:text-gray-400">Experience</p>
-                    <p className="text-sm font-semibold">3+ Years</p>
+                    <p className="text-sm font-semibold">2.5+ Years</p>
                     <p className="text-xs text-gray-600 dark:text-gray-400">Full Stack Dev</p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const About = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <Mail className="w-4 h-4 text-gray-500" />
-                    <span className="text-sm text-gray-600 dark:text-gray-400">aroarmehak427@gmail.com</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">aroarmehak0610@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="w-4 h-4 text-gray-500" />
@@ -261,7 +261,7 @@ const About = () => {
                 </div>
                 <div className="bg-gradient-to-br from-purple-600/10 to-pink-600/10 p-4 rounded-xl">
                   <Award className="w-6 h-6 text-purple-600 mb-2" />
-                  <h4 className="text-sm font-bold">WebWiz Apeijay Spark 2025</h4>
+                  <h4 className="text-sm font-bold">WebWiz Apeejay Spark 2025</h4>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Winner</p>
                 </div>
               </div>
@@ -306,21 +306,21 @@ const About = () => {
               
               <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm a passionate <span className="font-bold text-purple-600 dark:text-purple-400">Full Stack Developer</span> with over 3 years of experience building modern web applications. 
+                  I'm a passionate <span className="font-bold text-purple-600 dark:text-purple-400">Full Stack Developer</span> with over 2.5 years of experience building modern web applications. 
                   I specialize in <span className="font-bold text-pink-600 dark:text-pink-400">React.js</span> and <span className="font-bold text-blue-600 dark:text-blue-400">Spring Boot</span>, creating responsive, user-friendly interfaces with smooth animations and robust backend systems.
                 </p>
                 
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <div className="text-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-purple-600">6+</div>
+                    <div className="text-2xl font-bold text-purple-600">18+</div>
                     <div className="text-xs text-gray-600 dark:text-gray-400">Projects</div>
                   </div>
                   <div className="text-center p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-pink-600">3+</div>
+                    <div className="text-2xl font-bold text-pink-600">2.5+</div>
                     <div className="text-xs text-gray-600 dark:text-gray-400">Years Exp</div>
                   </div>
                   <div className="text-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">2+</div>
+                    <div className="text-2xl font-bold text-blue-600">5+</div>
                     <div className="text-xs text-gray-600 dark:text-gray-400">Clients</div>
                   </div>
                   <div className="text-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
@@ -418,7 +418,7 @@ const About = () => {
                     Folk Dance
                   </h4>
                   <p className="text-xs text-gray-600 dark:text-gray-400">2-time Winner - Youth Festival (2022-2023)</p>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">Best Dancer - All India Folk Art Contest 2022</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">Best Performer - All India Folk Art Contest 2022</p>
                 </div>
                 
                 <div className="bg-gray-50 dark:bg-gray-800/50 p-4 rounded-xl">
@@ -445,15 +445,15 @@ const About = () => {
           className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
         >
           <div className="glass-card p-4 md:p-6 text-center rounded-xl">
-            <div className="text-2xl md:text-3xl font-bold text-purple-600 mb-1">3+</div>
+            <div className="text-2xl md:text-3xl font-bold text-purple-600 mb-1">2.5+</div>
             <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
           </div>
           <div className="glass-card p-4 md:p-6 text-center rounded-xl">
-            <div className="text-2xl md:text-3xl font-bold text-pink-600 mb-1">6+</div>
+            <div className="text-2xl md:text-3xl font-bold text-pink-600 mb-1">18+</div>
             <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
           </div>
           <div className="glass-card p-4 md:p-6 text-center rounded-xl">
-            <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-1">2+</div>
+            <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-1">5+</div>
             <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Enterprise Clients</div>
           </div>
           <div className="glass-card p-4 md:p-6 text-center rounded-xl">
